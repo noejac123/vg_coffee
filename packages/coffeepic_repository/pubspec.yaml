@@ -1,0 +1,16 @@
+name: coffeepic_repository
+description: Repository to grab coffee pictures from a website
+version: 1.0.0+1
+publish_to: none
+
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  http: ^0.13.5
+  path_provider: ^2.0.11
+  shared_preferences: ^2.0.15
+
+dev_dependencies:
+  very_good_analysis: ^3.1.0

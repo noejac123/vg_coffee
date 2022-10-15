@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:coffeepic_repository/coffeepic_repository.dart';
@@ -15,10 +16,6 @@ class CoffeeRepository {
   Future<String> getNewImage() async {
     final response = await http.get(Uri.parse(url));
 
-    if (response.statusCode != 200) {
-      //throw error
-    }
-
     final coffeePic =
         CoffeePic.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
 
@@ -30,10 +27,6 @@ class CoffeeRepository {
       final uri = Uri.parse(url);
       final response = await http.get(uri);
 
-      if (response.statusCode != 200) {
-        //throw error
-      }
-
       final appDir = await getApplicationDocumentsDirectory();
       final imageName = uri.pathSegments.last;
 
@@ -44,7 +37,7 @@ class CoffeeRepository {
       final success = await _addToSavedImageList(fullPath);
       return success;
     } catch (e) {
-      //log error
+      log(e.toString());
       return false;
     }
   }
@@ -56,7 +49,7 @@ class CoffeeRepository {
       final success = await _removeFromSavedImageList(path);
       return success;
     } catch (e) {
-      // log e
+      log(e.toString());
       return false;
     }
   }

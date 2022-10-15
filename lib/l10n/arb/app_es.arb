@@ -1,0 +1,7 @@
+{
+    "@@locale": "es",
+    "cppBarTitle": "Muy Buen Cafe",
+    "@cppBarTitle": {
+        "description": "Muy buen título de la barra de aplicaciones de café."
+    }
+}

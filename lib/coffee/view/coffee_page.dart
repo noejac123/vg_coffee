@@ -4,6 +4,7 @@ import 'package:coffeepic_repository/coffeepic_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vgv_coffee/coffee/coffee.dart';
+import 'package:vgv_coffee/l10n/l10n.dart';
 
 class CoffeePage extends StatelessWidget {
   const CoffeePage({super.key});
@@ -23,6 +24,7 @@ class CoffeeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Very Good Coffee'),

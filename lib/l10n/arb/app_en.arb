@@ -1,0 +1,7 @@
+{
+    "@@locale": "en",
+    "cppBarTitle": "Very Good Coffee",
+    "@cppBarTitle": {
+        "description": "Very good coffee appbar title"
+    }
+}

@@ -134,7 +134,7 @@ class ImageLibrary extends StatelessWidget {
       builder: (context, state) {
         if (state.hasSavedPictures) {
           return Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10),
             child: SizedBox(
               height: 100,
               child: ListView(

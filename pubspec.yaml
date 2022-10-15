@@ -9,15 +9,15 @@ environment:
 
 dependencies:
   bloc: ^8.1.0
+  coffeepic_repository:
+    path: packages/coffeepic_repository
+  equatable: ^2.0.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
-  equatable: ^2.0.0
-  coffeepic_repository:
-    path: packages/coffeepic_repository
 
 dev_dependencies:
   bloc_test: ^9.1.0
